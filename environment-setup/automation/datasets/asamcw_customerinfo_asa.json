@@ -1,0 +1,38 @@
+{
+    "name": "asamcw_customerinfo_asa",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "#LINKED_SERVICE_NAME#",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "AzureSqlDWTable",
+        "schema": [
+            {
+                "name": "UserName",
+                "type": "nvarchar"
+            },
+            {
+                "name": "Gender",
+                "type": "nvarchar"
+            },
+            {
+                "name": "Phone",
+                "type": "nvarchar"
+            },
+            {
+                "name": "Email",
+                "type": "nvarchar"
+            },
+            {
+                "name": "CreditCard",
+                "type": "nvarchar"
+            }
+        ],
+        "typeProperties": {
+            "schema": "wwi_mcw",
+            "table": "CustomerInfo"
+        }
+    },
+    "type": "Microsoft.Synapse/workspaces/datasets"
+}
